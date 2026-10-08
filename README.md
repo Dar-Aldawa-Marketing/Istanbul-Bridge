@@ -7,3 +7,5 @@ Keep assets/ and manus-storage/ as folders. All event content is also embedded i
 No nested agenda/contact/speakers directories are included. Previously uploaded copies of those directories may be removed if present. GitHub Pages: main / (root). Wait until deployment finishes, then open https://dar-aldawa-marketing.github.io/Istanbul-Bridge/?v=6
 
 Includes all revised event information, faculty, social/scientific agenda, product marks, and four requested contacts with corrected Mohammad email.
+
+Söğüt restaurant photo source: Sofra, https://www.sofra.com.tr/nerede-ne-yenir/2025/03/27/bozdag-film-platosunda-unutulmaz-bir-iftar.
