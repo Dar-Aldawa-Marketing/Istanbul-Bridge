@@ -1,0 +1,498 @@
+.home-passport-strip.is-removed {
+  display: none !important;
+}
+
+.agenda-postcard {
+  display: none !important;
+}
+
+.agenda-day-intro {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.logo-rain {
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.11;
+  contain: strict;
+}
+
+.logo-rain__drop {
+  position: absolute;
+  top: -16vh;
+  left: var(--left);
+  width: clamp(74px, 8vw, 126px);
+  transform: translate3d(0, -18vh, 0) rotate(var(--tilt)) scale(var(--scale));
+  animation: logo-rain-fall var(--duration) linear var(--delay) infinite;
+  will-change: transform;
+}
+
+.logo-rain__drop img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.85);
+}
+
+@keyframes logo-rain-fall {
+  to {
+    transform: translate3d(var(--drift), 132vh, 0) rotate(calc(var(--tilt) + 7deg)) scale(var(--scale));
+  }
+}
+
+@media (max-width: 690px) {
+  .logo-rain {
+    opacity: 0.09;
+  }
+
+  .logo-rain__drop {
+    width: clamp(64px, 22vw, 92px);
+  }
+
+  .agenda-masthead {
+    min-height: 205px !important;
+    padding: 2.2rem 1rem 1.3rem !important;
+  }
+
+  .agenda-masthead h1 {
+    font-size: clamp(2.35rem, 11vw, 3rem) !important;
+  }
+
+  .agenda-layout {
+    padding: 1rem 0.65rem 2.5rem !important;
+  }
+
+  .calendar-tabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .calendar-tabs button {
+    min-height: 64px !important;
+    padding: 0.4rem 0.1rem !important;
+    border-top: 0 !important;
+    text-align: center !important;
+  }
+
+  .calendar-tabs button:not(:last-child) {
+    border-right: 1px solid var(--line) !important;
+  }
+
+  .calendar-tabs button span {
+    font-size: 0.42rem !important;
+  }
+
+  .calendar-tabs strong {
+    margin: 0.15rem 0 0 !important;
+    font-size: 1.05rem !important;
+  }
+
+  .calendar-tabs small {
+    display: none !important;
+  }
+
+  .agenda-day-intro {
+    padding: 1.15rem 0 1rem !important;
+  }
+}
+
+@media (max-width: 1040px) {
+  .site-header {
+    z-index: 1001 !important;
+  }
+
+  .menu-trigger {
+    position: fixed !important;
+    right: max(1rem, env(safe-area-inset-right)) !important;
+    bottom: max(1rem, env(safe-area-inset-bottom)) !important;
+    display: inline-flex !important;
+    min-width: 112px;
+    min-height: 52px;
+    justify-content: center;
+    padding: 0.75rem 1rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.42) !important;
+    border-radius: 999px;
+    background: var(--teal-deep) !important;
+    color: #fff !important;
+    box-shadow: 0 12px 32px rgba(8, 48, 60, 0.28);
+  }
+
+  .mobile-menu {
+    top: auto !important;
+    right: 0.8rem !important;
+    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 62px) !important;
+    left: 0.8rem !important;
+    max-height: 0 !important;
+    border: 0 !important;
+    border-radius: 18px;
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    box-shadow: none;
+    transition: max-height 0.32s var(--ease-out), opacity 0.22s var(--ease-out), transform 0.22s var(--ease-out) !important;
+  }
+
+  .mobile-menu.is-open {
+    max-height: calc(100dvh - 9rem) !important;
+    overflow-y: auto !important;
+    border: 1px solid var(--line) !important;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    box-shadow: 0 18px 48px rgba(8, 48, 60, 0.22);
+  }
+
+  .mobile-menu-inner {
+    padding: 0.65rem 1.25rem 1rem !important;
+  }
+
+  .mobile-nav-item {
+    padding: 0.78rem 0 !important;
+  }
+
+  .site-footer {
+    padding-bottom: 5.5rem !important;
+  }
+}
+
+@media (max-width: 690px) {
+  .first-hero {
+    padding-top: 1.8rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .hero-first-logo {
+    width: 150px !important;
+    height: auto !important;
+    margin-top: 0.4rem !important;
+  }
+
+  .first-hero h1 {
+    max-width: 10.5ch !important;
+    margin-top: 0.75rem !important;
+    font-size: clamp(2.45rem, 10.7vw, 3.15rem) !important;
+    line-height: 0.88 !important;
+  }
+
+  .hero-description {
+    margin-top: 0.9rem !important;
+  }
+
+  .hero-cta {
+    margin-top: 1.15rem !important;
+  }
+
+  .hero-countdown {
+    margin-top: 1.4rem !important;
+  }
+
+  .agenda-masthead {
+    min-height: 155px !important;
+    padding: 1.2rem 1rem 1rem !important;
+    background-position: center 34% !important;
+  }
+
+  .agenda-masthead h1 {
+    max-width: 14ch !important;
+    font-size: clamp(1.8rem, 8.3vw, 2.3rem) !important;
+    line-height: 0.9 !important;
+  }
+
+  .agenda-masthead span {
+    margin-top: 0.65rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce), print {
+  .logo-rain {
+    display: none !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .calendar-tabs button {
+    min-height: 58px !important;
+  }
+
+  .calendar-tabs strong {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* BRIDGE event identity */
+:root {
+  --teal: #49b9cd;
+  --teal-deep: #164f68;
+  --aqua: #dff5fb;
+  --lime: #00a99d;
+  --coral: #ef444d;
+  --ink: #14384a;
+  --paper: #fafdff;
+  --cream: #eef9fc;
+  --muted: #58727f;
+  --line: rgba(20, 79, 104, 0.17);
+}
+
+body {
+  background: var(--cream) !important;
+}
+
+.first-hero {
+  background-position: center center !important;
+}
+
+.first-hero::before {
+  background: linear-gradient(90deg, rgba(247, 253, 255, 0.98) 0%, rgba(247, 253, 255, 0.91) 38%, rgba(247, 253, 255, 0.34) 67%, rgba(247, 253, 255, 0.08) 100%) !important;
+}
+
+.brand-first,
+.hero-first-logo,
+.letter-logo,
+.letter-hero > img {
+  mix-blend-mode: multiply !important;
+}
+
+.brand-first {
+  width: 118px !important;
+}
+
+.hero-first-logo {
+  width: min(330px, 72vw) !important;
+  height: auto !important;
+}
+
+.logo-rain {
+  opacity: 0.13;
+}
+
+@media (max-width: 690px) {
+  .first-hero {
+    background-image: url("../manus-storage/bridge-theme.jpg") !important;
+    background-position: 62% center !important;
+  }
+
+  .first-hero::before {
+    background: linear-gradient(110deg, rgba(247, 253, 255, 0.98) 0%, rgba(247, 253, 255, 0.91) 58%, rgba(247, 253, 255, 0.42) 100%) !important;
+  }
+
+  .brand-first {
+    width: 88px !important;
+  }
+}
+
+/* Final mobile clarity and countdown order adjustments */
+.hero-countdown {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+.hero-countdown .event-facts {
+  display: contents !important;
+}
+
+.hero-countdown .event-facts > div:first-child {
+  order: 1;
+}
+
+.hero-countdown .countdown {
+  order: 2;
+}
+
+.hero-countdown .event-facts > div:last-child {
+  order: 3;
+}
+
+@media (max-width: 690px) {
+  .first-hero h1 {
+    max-width: 11.5ch !important;
+    font-size: clamp(2.2rem, 9.2vw, 2.9rem) !important;
+    line-height: 0.9 !important;
+  }
+
+  .agenda-day-intro {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 118px !important;
+    align-items: end !important;
+    column-gap: 0.7rem !important;
+    padding: 1.15rem 0 1rem !important;
+  }
+
+  .agenda-day-intro > div:first-child {
+    min-width: 0;
+  }
+
+  .agenda-day-intro h2 {
+    font-size: clamp(2rem, 8.8vw, 2.65rem) !important;
+    line-height: 0.88 !important;
+  }
+
+  .agenda-postcard {
+    display: block !important;
+    width: 118px !important;
+    height: 78px !important;
+    margin: 0 0 0 auto !important;
+    box-shadow: 5px 6px rgba(216, 120, 88, 0.14) !important;
+  }
+
+  .agenda-postcard span {
+    padding: 0.28rem 0.35rem !important;
+    font-size: 0.42rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .agenda-day-intro {
+    grid-template-columns: minmax(0, 1fr) 104px !important;
+    column-gap: 0.55rem !important;
+  }
+
+  .agenda-postcard {
+    width: 104px !important;
+    height: 70px !important;
+  }
+}
+
+/* Floating navigation fix: sticky headers create a containing block for fixed children. */
+@media (max-width: 1040px) {
+  .site-header {
+    overflow: visible !important;
+  }
+
+  .menu-trigger {
+    position: absolute !important;
+    top: 50% !important;
+    right: max(1rem, env(safe-area-inset-right)) !important;
+    bottom: auto !important;
+    left: auto !important;
+    z-index: 1003 !important;
+    width: 128px;
+    min-width: 128px !important;
+    min-height: 48px !important;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    background: linear-gradient(135deg, #0a8580, #075c68) !important;
+    box-shadow: 0 10px 24px rgba(8, 48, 60, 0.26), inset 0 1px rgba(255, 255, 255, 0.16);
+    transition: transform 0.18s var(--ease-out), box-shadow 0.18s var(--ease-out), background 0.18s var(--ease-out) !important;
+  }
+
+  .menu-trigger:hover {
+    background: linear-gradient(135deg, #0c938d, #086a76) !important;
+    box-shadow: 0 13px 28px rgba(8, 48, 60, 0.3), inset 0 1px rgba(255, 255, 255, 0.2);
+  }
+
+  .menu-trigger:active {
+    transform: translateY(-50%) scale(0.97);
+  }
+
+  .menu-trigger:focus-visible {
+    outline: 3px solid rgba(213, 225, 96, 0.9);
+    outline-offset: 3px;
+  }
+
+  .mobile-menu {
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    right: 0.8rem !important;
+    bottom: auto !important;
+    left: 0.8rem !important;
+    z-index: 1002 !important;
+    transform: translateY(-8px);
+  }
+
+  .mobile-menu.is-open {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-trigger {
+    width: 116px;
+    min-width: 116px !important;
+    padding: 0.65rem 0.85rem !important;
+  }
+}
+
+/* Keep the floating control independent from sticky/header layout and page scroll. */
+@media (max-width: 1040px) {
+  .floating-menu-layer {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 1002 !important;
+    pointer-events: none;
+  }
+
+  .floating-menu-layer .menu-trigger {
+    position: absolute !important;
+    top: max(0.75rem, env(safe-area-inset-top)) !important;
+    right: max(1rem, env(safe-area-inset-right)) !important;
+    bottom: auto !important;
+    left: auto !important;
+    z-index: 1003 !important;
+    transform: none !important;
+    pointer-events: auto;
+  }
+
+  .floating-menu-layer .menu-trigger:hover {
+    transform: translateY(-1px) !important;
+  }
+
+  .floating-menu-layer .menu-trigger:active {
+    transform: scale(0.97) !important;
+  }
+
+  .floating-menu-layer .mobile-menu {
+    position: absolute !important;
+    top: calc(max(0.75rem, env(safe-area-inset-top)) + 58px) !important;
+    right: 0.8rem !important;
+    bottom: auto !important;
+    left: 0.8rem !important;
+    z-index: 1002 !important;
+    pointer-events: none;
+  }
+
+  .floating-menu-layer .mobile-menu.is-open {
+    pointer-events: auto;
+  }
+}
+
+/* Remove the Istanbul Note card from the agenda and give the itinerary full width. */
+.agenda-postcard {
+  display: none !important;
+}
+
+@media (max-width: 690px) {
+  .agenda-day-intro {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
+/* Final BRIDGE identity overrides */
+:root {
+  --teal: #49b9cd;
+  --teal-deep: #164f68;
+  --aqua: #dff5fb;
+  --lime: #00a99d;
+  --coral: #ef444d;
+  --ink: #14384a;
+  --paper: #fafdff;
+  --cream: #eef9fc;
+  --muted: #58727f;
+  --line: rgba(20, 79, 104, 0.17);
+}
+
+body { background: var(--cream) !important; }
+.first-hero { background-position: center center !important; }
+.first-hero::before { background: linear-gradient(90deg, rgba(247,253,255,.98) 0%, rgba(247,253,255,.91) 38%, rgba(247,253,255,.34) 67%, rgba(247,253,255,.08) 100%) !important; }
+.brand-first,.hero-first-logo,.letter-logo,.letter-hero>img { mix-blend-mode: multiply !important; }
+.brand-first { width: 118px !important; }
+.hero-first-logo { width: min(330px,72vw) !important; height: auto !important; }
+.logo-rain { opacity: .13; }
+
+@media (max-width: 690px) {
+  .first-hero { background-image: url("../manus-storage/bridge-theme.jpg") !important; background-position: 62% center !important; }
+  .first-hero::before { background: linear-gradient(110deg, rgba(247,253,255,.98) 0%, rgba(247,253,255,.91) 58%, rgba(247,253,255,.42) 100%) !important; }
+  .brand-first { width: 88px !important; }
+}

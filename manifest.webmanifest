@@ -1,0 +1,16 @@
+{
+  "name": "Bridge \u00b7 Istanbul 2026",
+  "short_name": "Bridge",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#29269a",
+  "icons": [
+    {
+      "src": "./manus-storage/bridge-event-logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
