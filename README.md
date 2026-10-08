@@ -11,3 +11,5 @@ For reliable loading, index.html also embeds its required styles, JavaScript and
 Includes the Bridge event identity and seven product marks, 13–16 October social programme, three faculty biographies with photos, the detailed 14 October scientific agenda, and contact order: Hasan Alnajar, Abdallah Nasser, Mohammad Alramahi, May Shashtari. Mohammad’s active email: Mohammad.alramahi@dadgroup.com.
 
 Sources: supplied Bridge.zip; Bridge 2026 istanbul Biography & Agenda.pdf; contact details from the request. Reference design: https://dar-aldawa-marketing.github.io/Control/
+
+Link preview: bridge-social-preview.png (1200 × 630) and Open Graph image metadata are included. Static entry pages are included for direct links to each section.
