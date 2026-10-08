@@ -1,15 +1,9 @@
-# Istanbul-Bridge — full replacement package
+# Istanbul-Bridge — complete corrected package
 
-This ZIP contains the complete site: index.html, 404.html, manifest.webmanifest, assets/, manus-storage/ and .nojekyll.
+Upload the contents of this ZIP to the Istanbul-Bridge repository root. There is exactly ONE index.html in this package. It is the full application, approximately 7.4 MiB; replace the currently published small redirect-only index.html with this file.
 
-Extract the ZIP and upload **all extracted files and both folders** to the root of the Istanbul-Bridge repository, replacing the previous website files. Keep folders intact. Do not upload the ZIP itself.
+Keep assets/ and manus-storage/ as folders. All event content is also embedded in index.html so the main app does not depend on image or script folder paths. bridge-social-preview.png must be uploaded at the repository ROOT for link previews. 404.html handles direct-section refresh.
 
-GitHub Pages: main branch, / (root). After deployment, refresh with Ctrl+Shift+R.
+No nested agenda/contact/speakers directories are included. Previously uploaded copies of those directories may be removed if present. GitHub Pages: main / (root). Wait until deployment finishes, then open https://dar-aldawa-marketing.github.io/Istanbul-Bridge/?v=6
 
-For reliable loading, index.html also embeds its required styles, JavaScript and images. The assets and image folders are included in full for maintenance and complete replacement. assets/bridge.js contains the current standalone application bundle.
-
-Includes the Bridge event identity and seven product marks, 13–16 October social programme, three faculty biographies with photos, the detailed 14 October scientific agenda, and contact order: Hasan Alnajar, Abdallah Nasser, Mohammad Alramahi, May Shashtari. Mohammad’s active email: Mohammad.alramahi@dadgroup.com.
-
-Sources: supplied Bridge.zip; Bridge 2026 istanbul Biography & Agenda.pdf; contact details from the request. Reference design: https://dar-aldawa-marketing.github.io/Control/
-
-Link preview: bridge-social-preview.png (1200 × 630) and Open Graph image metadata are included. Static entry pages are included for direct links to each section.
+Includes all revised event information, faculty, social/scientific agenda, product marks, and four requested contacts with corrected Mohammad email.
