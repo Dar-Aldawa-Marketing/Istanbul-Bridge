@@ -12,3 +12,8 @@
 .bridge-artwork img{display:block;width:100%;height:auto}
 @media(max-width:690px){.first-hero{background-image:url('../manus-storage/bridge-theme.jpg')!important;background-position:62% center!important}.first-hero::before{background:linear-gradient(110deg,rgba(247,249,253,.98),rgba(247,249,253,.9) 58%,rgba(247,249,253,.42))!important}.bridge-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-first-logo{max-width:250px!important}.bridge-product-grid img{height:96px}.brand-first{height:44px!important}}
 @media(prefers-reduced-motion:reduce){.logo-rain{display:none!important}}
+
+@media(min-width:900px){.speaker-portraits{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:1.4rem!important}}
+.speaker-card-title h3{font-size:1.03rem!important;line-height:1.4!important}.contact-action-list a[aria-disabled="true"]{cursor:default;opacity:.75}.speaker-photo-frame img{object-position:center 30%}
+
+.speaker-overlay{z-index:2005!important}.speaker-intro h2{font-size:clamp(2rem,7.5vw,3.8rem)!important;line-height:1.04!important}.speaker-intro h2 em{overflow-wrap:break-word}
